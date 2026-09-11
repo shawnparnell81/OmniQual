@@ -1,0 +1,62 @@
+{
+  "id": "training-attendance",
+  "folderId": "attendance",
+  "title": "Training Attendance",
+  "description": "Record training attendance and competency verification for ISO 9001 Clause 7.2.",
+  "schema": {
+    "title": "Training Attendance",
+    "description": "Course details, attendees, and competency verification.",
+    "formCode": "QMS-TRN-001",
+    "isoClause": "ISO 9001:2015 7.2",
+    "fields": [
+      {
+        "id": "courseTitle",
+        "label": "Course title",
+        "type": "text",
+        "required": true,
+        "pdfField": "courseTitle"
+      },
+      {
+        "id": "trainer",
+        "label": "Trainer",
+        "type": "text",
+        "required": true,
+        "pdfField": "trainer"
+      },
+      {
+        "id": "trainingDate",
+        "label": "Training date",
+        "type": "date",
+        "required": true,
+        "pdfField": "trainingDate"
+      },
+      {
+        "id": "location",
+        "label": "Location",
+        "type": "text",
+        "pdfField": "location",
+        "placeholder": "Shop floor / conference room / remote"
+      },
+      {
+        "id": "attendees",
+        "label": "Attendees",
+        "type": "textarea",
+        "required": true,
+        "pdfField": "attendees",
+        "placeholder": "One name per line"
+      },
+      {
+        "id": "competencyVerified",
+        "label": "Competency verified",
+        "type": "checkbox",
+        "pdfField": "competencyVerified"
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "pdfField": "comments"
+      }
+    ]
+  }
+}

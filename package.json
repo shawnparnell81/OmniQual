@@ -1,20 +1,40 @@
 {
   "name": "omniqual",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "OmniQual ISO 9001 QMS",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently -n api,web -c cyan,magenta \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:api": "tsx watch server/index.ts",
+    "dev:web": "npm run dev --prefix OmniQual",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx server/db/migrate.ts",
+    "db:seed": "tsx server/seed.ts",
+    "db:setup": "tsx server/db/migrate.ts && tsx server/seed.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "drizzle-kit": "^0.31.10",
+    "@electric-sql/pglite": "^0.3.16",
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.3",
     "drizzle-orm": "^0.45.2",
     "express": "^5.2.1",
-    "pg": "^8.23.0",
-    "pg-hstore": "^2.3.4"
+    "pdf-lib": "^1.17.1",
+    "pg": "^8.23.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.13.3",
+    "@types/pg": "^8.15.5",
+    "concurrently": "^9.2.1",
+    "drizzle-kit": "^0.31.10",
+    "tsx": "^4.20.5",
+    "typescript": "~5.9.2"
   }
 }

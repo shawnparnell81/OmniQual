@@ -1,5 +1,5 @@
 {
-  "name": "package.json",
+  "name": "omniqual-web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^5.4.530",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },

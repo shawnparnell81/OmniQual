@@ -1,0 +1,86 @@
+{
+  "id": "capa",
+  "folderId": "capa",
+  "title": "CAPA Initiation",
+  "description": "Open a corrective and preventive action for ISO 9001 Clause 10.2 / 10.3.",
+  "schema": {
+    "title": "CAPA Initiation",
+    "description": "Problem statement, containment, and proposed action before investigation.",
+    "formCode": "QMS-CAPA-001",
+    "isoClause": "ISO 9001:2015 10.2 / 10.3",
+    "fields": [
+      {
+        "id": "capaNumber",
+        "label": "CAPA number",
+        "type": "text",
+        "required": true,
+        "pdfField": "capaNumber",
+        "placeholder": "CAPA-0001"
+      },
+      {
+        "id": "dateOpened",
+        "label": "Date opened",
+        "type": "date",
+        "required": true,
+        "pdfField": "dateOpened"
+      },
+      {
+        "id": "initiatedBy",
+        "label": "Initiated by",
+        "type": "text",
+        "required": true,
+        "pdfField": "initiatedBy"
+      },
+      {
+        "id": "source",
+        "label": "Source",
+        "type": "select",
+        "required": true,
+        "pdfField": "source",
+        "options": ["NCR", "Internal audit", "Customer complaint", "Supplier issue", "Trend / management review", "Other"]
+      },
+      {
+        "id": "problemStatement",
+        "label": "Problem statement",
+        "type": "textarea",
+        "required": true,
+        "pdfField": "problemStatement",
+        "placeholder": "What happened, impact, and evidence"
+      },
+      {
+        "id": "containment",
+        "label": "Containment",
+        "type": "textarea",
+        "required": true,
+        "pdfField": "containment"
+      },
+      {
+        "id": "rootCause",
+        "label": "Suspected root cause",
+        "type": "textarea",
+        "pdfField": "rootCause"
+      },
+      {
+        "id": "proposedAction",
+        "label": "Proposed corrective / preventive action",
+        "type": "textarea",
+        "required": true,
+        "pdfField": "proposedAction"
+      },
+      {
+        "id": "owner",
+        "label": "Owner",
+        "type": "text",
+        "required": true,
+        "pdfField": "owner"
+      },
+      {
+        "id": "dueDate",
+        "label": "Due date",
+        "type": "date",
+        "required": true,
+        "pdfField": "dueDate"
+      }
+    ]
+  }
+}

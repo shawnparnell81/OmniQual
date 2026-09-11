@@ -1,0 +1,89 @@
+{
+  "id": "ncr",
+  "folderId": "ncr",
+  "title": "Nonconformance Report",
+  "description": "Capture product or process nonconformances for ISO 9001 Clause 8.7 / 10.2.",
+  "schema": {
+    "title": "Nonconformance Report",
+    "description": "Record the nonconformance, immediate action, and proposed disposition.",
+    "formCode": "QMS-NCR-001",
+    "isoClause": "ISO 9001:2015 8.7 / 10.2",
+    "fields": [
+      {
+        "id": "ncrNumber",
+        "label": "NCR number",
+        "type": "text",
+        "required": true,
+        "pdfField": "ncrNumber",
+        "placeholder": "NCR-0001"
+      },
+      {
+        "id": "dateIdentified",
+        "label": "Date identified",
+        "type": "date",
+        "required": true,
+        "pdfField": "dateIdentified"
+      },
+      {
+        "id": "reportedBy",
+        "label": "Reported by",
+        "type": "text",
+        "required": true,
+        "pdfField": "reportedBy",
+        "placeholder": "Name / badge"
+      },
+      {
+        "id": "department",
+        "label": "Department",
+        "type": "select",
+        "required": true,
+        "pdfField": "department",
+        "options": ["Quality", "Production", "Purchasing", "Training", "Management"]
+      },
+      {
+        "id": "productOrProcess",
+        "label": "Product or process",
+        "type": "text",
+        "required": true,
+        "pdfField": "productOrProcess"
+      },
+      {
+        "id": "severity",
+        "label": "Severity",
+        "type": "select",
+        "required": true,
+        "pdfField": "severity",
+        "options": ["Low", "Medium", "High", "Critical"]
+      },
+      {
+        "id": "description",
+        "label": "Description of nonconformance",
+        "type": "textarea",
+        "required": true,
+        "pdfField": "description",
+        "placeholder": "What was found, where, and how it was detected"
+      },
+      {
+        "id": "immediateAction",
+        "label": "Immediate / containment action",
+        "type": "textarea",
+        "required": true,
+        "pdfField": "immediateAction"
+      },
+      {
+        "id": "disposition",
+        "label": "Disposition",
+        "type": "select",
+        "pdfField": "disposition",
+        "options": ["Use as-is", "Rework", "Repair", "Scrap", "Return to supplier", "Pending"]
+      },
+      {
+        "id": "owner",
+        "label": "Owner",
+        "type": "text",
+        "required": true,
+        "pdfField": "owner"
+      }
+    ]
+  }
+}

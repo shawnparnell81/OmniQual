@@ -1,0 +1,46 @@
+{
+  "departments": [
+    {
+      "id": "quality",
+      "label": "Quality",
+      "children": [
+        { "id": "document-control", "label": "Document Control" },
+        { "id": "capa", "label": "CAPA" },
+        { "id": "ncr", "label": "Nonconformance" },
+        { "id": "audits", "label": "Internal Audits" },
+        { "id": "discrepancy", "label": "Discrepancy Investigation" }
+      ]
+    },
+    {
+      "id": "production",
+      "label": "Production",
+      "children": [
+        { "id": "work-instructions", "label": "Work Instructions" },
+        { "id": "inspections", "label": "Inspections" }
+      ]
+    },
+    {
+      "id": "purchasing",
+      "label": "Purchasing",
+      "children": [
+        { "id": "supplier-quality", "label": "Supplier Quality" }
+      ]
+    },
+    {
+      "id": "training",
+      "label": "Training",
+      "children": [
+        { "id": "competence-records", "label": "Competence Records" },
+        { "id": "attendance", "label": "Attendance" }
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "children": [
+        { "id": "management-review", "label": "Management Review" },
+        { "id": "calibration", "label": "Calibration" }
+      ]
+    }
+  ]
+}
